@@ -61,8 +61,6 @@ if len(ids) == 0:
 	print('No IDs to make QR codes of!')
 	sys.exit(1)
 
-print(ids)
-
 for nodeid in ids:
 	img = qrcode.make(nodeid, image_factory=qrcode.image.svg.SvgPathFillImage)
 	img.save('{}.svg'.format(nodeid))
