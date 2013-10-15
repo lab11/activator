@@ -2127,6 +2127,44 @@ http://www.keyelco.com/pdfs/M55p4.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="headers">
+<packages>
+<package name="TESTPOINT_0.040IN">
+<pad name="TESTPOINT" x="0" y="0" drill="1.016"/>
+<text x="0" y="1.524" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TEST_POINT">
+<description>Test point.</description>
+<pin name="TESTPOINT" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-3.175" y="0" size="1.016" layer="95" ratio="12" align="center-right">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEST_POINT_0.040IN" prefix="TP">
+<description>0.040in Test Point</description>
+<gates>
+<gate name="G$1" symbol="TEST_POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TESTPOINT_0.040IN">
+<connects>
+<connect gate="G$1" pin="TESTPOINT" pad="TESTPOINT"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="5001K-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Brad Campbell"/>
@@ -2147,6 +2185,7 @@ http://www.keyelco.com/pdfs/M55p4.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="X2" library="activator" deviceset="MSP1007" device=""/>
 <part name="U$3" library="logos" deviceset="UMICH_SOLID" device="_SMALL+"/>
+<part name="TP1" library="headers" deviceset="TEST_POINT_0.040IN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2161,6 +2200,7 @@ http://www.keyelco.com/pdfs/M55p4.pdf</description>
 <instance part="GND1" gate="1" x="45.72" y="139.7"/>
 <instance part="X2" gate="G$1" x="50.8" y="104.14" rot="R180"/>
 <instance part="U$3" gate="G$1" x="231.14" y="172.72"/>
+<instance part="TP1" gate="G$1" x="104.14" y="96.52" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2218,8 +2258,12 @@ http://www.keyelco.com/pdfs/M55p4.pdf</description>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <label x="106.68" y="88.9" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP1" gate="G$1" pin="TESTPOINT"/>
+<wire x1="104.14" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="93.98" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
+<junction x="104.14" y="88.9"/>
 </segment>
 </net>
 </nets>
