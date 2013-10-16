@@ -1,0 +1,11 @@
+InfoKey: Creator
+InfoValue: pdftk 1.44 - www.pdftk.com
+InfoKey: Producer
+InfoValue: iText 2.1.7 by 1T3XT
+InfoKey: ModDate
+InfoValue: D:20131015193013-04'00'
+InfoKey: CreationDate
+InfoValue: D:20131015193013-04'00'
+PdfID0: e89f23973f9b44aa6f5325a7374c9bf
+PdfID1: aee18429272279cb1703d51bb17c5e7
+NumberOfPages: 11
