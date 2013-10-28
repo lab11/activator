@@ -62,5 +62,7 @@ if len(ids) == 0:
 	sys.exit(1)
 
 for nodeid in ids:
-	img = qrcode.make(nodeid, image_factory=qrcode.image.svg.SvgPathFillImage)
-	img.save('{}.svg'.format(nodeid))
+	img = qrcode.make(nodeid, image_factory=qrcode.image.svg.SvgPathImage, border=0)
+	img.save('{}.svg'.format(nodeid.replace(':', '')))
+
+
