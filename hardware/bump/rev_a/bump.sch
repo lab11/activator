@@ -7456,7 +7456,7 @@ type 0309, grid 2.5 mm</description>
 </library>
 </libraries>
 <attributes>
-<attribute name="AUTHOR" value="Brad Campbell"/>
+<attribute name="AUTHOR" value="Pat Pannuto"/>
 <attribute name="REV" value="A"/>
 <attribute name="TITLE" value="Bump"/>
 </attributes>
