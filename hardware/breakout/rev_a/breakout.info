@@ -2,3 +2,4 @@ author: Pat Pannuto
 rev: A
 description: A breakout board to add quick-connects to the impulse board. It also contains room for banks of extra capacitors.
 title: Impulse-Breakout
+github: http://github.com/lab11/activator

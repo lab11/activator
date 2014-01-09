@@ -1,3 +1,5 @@
 title: Bump
 rev: A
 author: Brad Campbell
+github: http://github.com/lab11/activator
+description: Impulse trigger frontend that uses a SQ-SEN-200 vibration sensor to drive the trigger line.

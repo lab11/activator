@@ -2,3 +2,4 @@ AUTHOR: Brad Campbell
 REV: A
 TITLE: Buzz
 DESCRIPTION: Impulse trigger frontend that uses a pizeo-electric harvester to drive the trigger line.
+github: http://github.com/lab11/activator
