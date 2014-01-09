@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7458,7 +7458,7 @@ type 0309, grid 2.5 mm</description>
 <attributes>
 <attribute name="AUTHOR" value="Brad Campbell"/>
 <attribute name="REV" value="A"/>
-<attribute name="TITLE" value="Buzz"/>
+<attribute name="TITLE" value="Bump"/>
 </attributes>
 <variantdefs>
 </variantdefs>
